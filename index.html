@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header>
+    <h1 class="typing">Hi, I'm Tejaswini, Web Developer</h1>
+    <nav>
+      <li><a href="Tejaswini Resume.pdf" download>📄 Download Resume</a></li>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="Tejaswini Resume.pdf" download>📄 Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+  <button id="toggleDarkMode">🌙 Toggle Dark Mode</button>
+
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer currently learning front-end technologies...</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>To-Do List</h3>
+        <p>Simple to-do list app using HTML, CSS, JS.</p>
+      </div>
+      <div class="card">
+        <h3>Calculator</h3>
+        <p>Functional calculator made with JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('web')">Web</button>
+    <button onclick="filterProjects('python')">Python</button>
+  </div>
+
+  <div class="project-cards">
+    <div class="card" data-category="web">
+      <h3>Portfolio Website</h3>
+      <p>Responsive web design using HTML/CSS.</p>
+    </div>
+    <div class="card" data-category="web">
+      <h3>To-Do List</h3>
+      <p>Task manager using JS.</p>
+    </div>
+    <div class="card" data-category="python">
+      <h3>Calculator</h3>
+      <p>Basic calculator using Python Tkinter.</p>
+    </div>
+  </div>
+</section>
+  <footer>
+    <p>&copy; 2025 Tejaswini Mahajan</p>
+    <div class="socials">
+      <a href="https://github.com/tejaswinimahajan07" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/tejaswini-mahajan-51250a315" target="_blank">LinkedIn</a>
+    </div>
+    <button id="scrollTopBtn">↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
